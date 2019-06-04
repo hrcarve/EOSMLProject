@@ -30,7 +30,7 @@ i = 0
 j=0
 for den in dens:
     j+=1
-    print("{} out of {}".format(j+1, n))
+    print("{} out of {}".format(j, n))
     for temp in temps:
         for a in a_s:
             # x += den
@@ -43,8 +43,8 @@ for den in dens:
             # print(ens)
 
 # print(len(ens))
-# img = ax.scatter(xs=x, ys=y, zs=z, c=ens, cmap=plt.hot())
-# fig.colorbar(img)
-# fig.savefig('figE2.png', dpi=150)
+img = ax.scatter(xs=data['x'], ys=data['y'], zs=data['z'], c=data['E'], cmap=plt.hot())
+fig.colorbar(img)
+fig.savefig('figE2.png', dpi=150)
 
-data.to_csv(r'EnergyData{}.csv'.format(n), index=None, header=False)
+# data.to_csv(r'EnergyData{}.csv'.format(n), index=None, header=False)
