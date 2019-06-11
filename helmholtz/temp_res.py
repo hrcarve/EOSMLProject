@@ -5,9 +5,9 @@ import pandas as pd
 
 import helmholtz
 
-n = 1000
+n = 20
 den = 5e13#np.logspace(13, 14, n)
-temps = np.linspace(1e10, 1.5e10, n)#p.logspace(10, 11, n)
+temps = np.logspace(10, 11, n)#p.logspace(10, 11, n)
 a = 55#np.linspace(55, 65, n)
 z = 28#*= 28
 ye = z/a
@@ -28,4 +28,4 @@ for temp in temps:
          #   data.loc[i] = [den, temp, z_s[0]/a, en]
          #   i += 1
 
-data.to_csv(r'Temp_resolution{}_{}.csv'.format('1-1.5e10',n), index=None, header=True)
+data.to_csv(r'Temp_resolution{}_{}.csv'.format('10-11',n), index=None, header=True)
