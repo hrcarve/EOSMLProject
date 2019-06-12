@@ -68,7 +68,7 @@
 
 ! open the file (use softlinks to input the desired table)
 
-       open(unit=19,file=TBLPATH,status='old')
+       open(unit=19,file='helm_table.dat',status='old')
 
 
 ! for standard table limits
@@ -152,8 +152,8 @@
 
 
 !      write(6,*)
-      write(6,*) 'finished reading eos table'
-      write(6,04) 'imax=',imax,' jmax=',jmax
+!      write(6,*) 'finished reading eos table'
+!      write(6,04) 'imax=',imax,' jmax=',jmax
 !04    format(1x,4(a,i4))
 !      write(6,03) 'temp(1)   =',t(1),' temp(jmax)   =',t(jmax)
 !      write(6,03) 'ye*den(1) =',d(1),' ye*den(imax) =',d(imax)

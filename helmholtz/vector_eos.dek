@@ -2,21 +2,20 @@
 
 ! maximum length of the row vector
       integer   nrowmax
-!      parameter (nrowmax = 1000)
+      parameter (nrowmax = 1000)
 !      parameter (nrowmax = 10000)
-      parameter (nrowmax = 1000000)
 
 
 ! maximum number of isotopes
       integer   irowmax
-      parameter (irowmax = 1)
-!      parameter (irowmax = 600)
+!      parameter (irowmax = 1)
+      parameter (irowmax = 100)
 
 
 ! maximum number of ionization stages
       integer   jstagemax
-      parameter (jstagemax = 1)
-!      parameter (jstagemax = 30)
+!      parameter (jstagemax = 1)
+      parameter (jstagemax = 30)
 
 
 ! failure of an eos
